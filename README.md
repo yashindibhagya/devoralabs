@@ -59,3 +59,4 @@ public/
   build command `npm run build`, output `dist`.
 # devoralabs
 # devoralabs
+# devoralabs
