@@ -34,9 +34,9 @@ export function Bento() {
                 </span>
               </div>
               <div>
-                <div className="font-display text-7xl font-bold tracking-tight">120+</div>
+                <div className="font-display text-7xl font-bold tracking-tight">10+</div>
                 <p className="mt-3 max-w-xs text-white/70">
-                  Products, brands and platforms shipped for teams across 14 industries worldwide.
+                  10+ products, brands and platforms shipped.
                 </p>
               </div>
             </div>

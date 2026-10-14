@@ -133,7 +133,7 @@ export const projects: Project[] = [
 ]
 
 export const numbers = [
-  { val: '120', unit: '+', label: 'Projects Shipped', desc: 'Across 14 industries worldwide' },
+  { val: '10', unit: '+', label: 'Projects Shipped', desc: '10+ products, brands and platforms shipped' },
   { val: '98', unit: '%', label: 'Client Retention', desc: 'Most clients return for another project' },
   { val: '7', unit: 'yr', label: 'In Business', desc: 'Founded 2017, profitable from day one' },
   { val: '4.9', unit: '★', label: 'Avg App Rating', desc: 'Across all published mobile apps' },
