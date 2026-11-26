@@ -12,9 +12,9 @@ export function Testimonials() {
           intro="Don't take our word for it — here's what the teams we've partnered with have to say."
         />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-6">
           {testimonials.map((t, i) => (
-            <Reveal key={t.name} delay={i * 0.08}>
+            <Reveal key={t.name} delay={(i % 3) * 0.08} className={i < 2 ? 'md:col-span-3' : 'md:col-span-2'}>
               <figure className="card-base flex h-full flex-col p-8">
                 <div className="text-amber-400">★★★★★</div>
                 <blockquote className="mt-5 flex-1 text-[1.05rem] leading-relaxed text-ink-soft">

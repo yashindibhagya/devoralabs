@@ -162,6 +162,18 @@ export const steps = [
 
 export const testimonials = [
   {
+    text: "Devora Labs built our new website from scratch and a custom work dashboard that now runs our day-to-day operations. They took the time to understand exactly how we work, turned our ideas into a polished, professional platform, and delivered on every promise.",
+    name: 'MawPrint',
+    role: 'Website & Operations Dashboard',
+    initials: 'MP',
+  },
+  {
+    text: 'Devora Labs gave us an elegant online presence that truly does justice to our gems. The website is beautiful, fast and easy for customers to browse — and the team was a pleasure to work with from the first call to launch.',
+    name: 'De-silva Gems',
+    role: 'Website · Gem & Jewellery',
+    initials: 'DG',
+  },
+  {
     text: 'Devora Labs transformed our outdated platform into a revenue-generating machine. Conversion rates up 340% in the first quarter.',
     name: 'Sarah Chen',
     role: 'CEO, NovaPay',
