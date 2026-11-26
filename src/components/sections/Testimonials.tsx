@@ -12,15 +12,15 @@ export function Testimonials() {
           intro="Don't take our word for it — here's what the teams we've partnered with have to say."
         />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-6">
+        <div className="mx-auto mt-14 grid max-w-4xl gap-6 md:grid-cols-2">
           {testimonials.map((t, i) => (
-            <Reveal key={t.name} delay={(i % 3) * 0.08} className={i < 2 ? 'md:col-span-3' : 'md:col-span-2'}>
-              <figure className="card-base flex h-full flex-col p-8">
+            <Reveal key={t.name} delay={i * 0.08}>
+              <figure className="card-base flex h-full flex-col p-6 md:p-7">
                 <div className="text-amber-400">★★★★★</div>
-                <blockquote className="mt-5 flex-1 text-[1.05rem] leading-relaxed text-ink-soft">
+                <blockquote className="mt-4 flex-1 text-[0.95rem] leading-relaxed text-ink-soft">
                   “{t.text}”
                 </blockquote>
-                <figcaption className="mt-8 flex items-center gap-3 border-t border-ink/[0.06] pt-6">
+                <figcaption className="mt-6 flex items-center gap-3 border-t border-ink/[0.06] pt-5">
                   <span className="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-brand-400 to-brand-700 text-sm font-bold text-white">
                     {t.initials}
                   </span>

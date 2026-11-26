@@ -173,24 +173,6 @@ export const testimonials = [
     role: 'Website · Gem & Jewellery',
     initials: 'DG',
   },
-  {
-    text: 'Devora Labs transformed our outdated platform into a revenue-generating machine. Conversion rates up 340% in the first quarter.',
-    name: 'Sarah Chen',
-    role: 'CEO, NovaPay',
-    initials: 'SC',
-  },
-  {
-    text: 'The team delivered a mobile app that our customers actually love. 4.9 stars on the App Store speaks for itself. Absolute professionals.',
-    name: 'Marcus Wright',
-    role: 'Founder, Flux',
-    initials: 'MW',
-  },
-  {
-    text: "Best tech investment we've made. They understood our vision better than we did — and executed it flawlessly, on time, on budget.",
-    name: 'Priya Patel',
-    role: 'VP Product, Terrain',
-    initials: 'PP',
-  },
 ]
 
 export const faqs = [
