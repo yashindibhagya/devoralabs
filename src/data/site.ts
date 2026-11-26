@@ -28,24 +28,24 @@ export const services = [
     num: '01',
     title: 'UI/UX Design',
     description:
-      'Elevate your identity with sharp positioning, cohesive visuals, and interfaces that convert visitors into loyal users.',
-    tags: ['Art Direction', 'Brand Strategy', 'Logo Design', 'Color Systems'],
+      'User research, wireframes, prototypes and polished interfaces for websites and mobile apps — designed to turn visitors into loyal users.',
+    tags: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems'],
   },
   {
     id: 'web-development',
     num: '02',
     title: 'Web Development',
     description:
-      'Refresh or rebuild your web presence with pixel-perfect flows, micro-interactions, and clean, scalable architecture.',
-    tags: ['Clean & Modern UI', 'Rebranding', 'Design Systems', 'Prototyping'],
+      'Custom websites, web applications and dashboards built with React and Next.js — fast, responsive, SEO-ready and built on clean, scalable architecture.',
+    tags: ['React & Next.js', 'Responsive Websites', 'Web Apps & Dashboards', 'E-commerce'],
   },
   {
     id: 'mobile-development',
     num: '03',
-    title: 'Mobile Development',
+    title: 'Mobile App Development',
     description:
-      'Launch a revenue-driving app that captures qualified leads 24/7 — designed, developed, and shipped in 14 days or less.',
-    tags: ['React Native', 'Integrations', 'CMS', 'Animation'],
+      'Cross-platform iOS and Android apps built with React Native — from MVP to App Store and Google Play launch, with the integrations your business needs.',
+    tags: ['React Native', 'iOS & Android', 'API Integrations', 'App Store Launch'],
   },
 ]
 
@@ -206,6 +206,21 @@ export const faqs = [
     question: 'Can you work with my existing team?',
     answer:
       'Absolutely. We slot in as your design partner and work with your product, marketing, or dev team. We use your tools and processes where it makes sense.',
+  },
+  {
+    question: 'Do you build mobile apps for both iOS and Android?',
+    answer:
+      'Yes. We build cross-platform mobile apps with React Native, so a single codebase ships to both the Apple App Store and Google Play — saving you time and budget without compromising on a native feel.',
+  },
+  {
+    question: 'What technologies do you use for web development?',
+    answer:
+      'We build websites and web applications with React, Next.js, TypeScript and Tailwind CSS, connected to modern APIs and headless CMSs. Every site is responsive, fast-loading and built with SEO best practices from day one.',
+  },
+  {
+    question: 'Do you work with clients outside Sri Lanka?',
+    answer:
+      'Yes. We are a Sri Lanka–based web and mobile app development team working with startups and businesses worldwide. We collaborate remotely across time zones with regular check-ins.',
   },
   {
     question: 'What do I need to have ready before we start?',

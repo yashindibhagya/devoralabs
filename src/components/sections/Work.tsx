@@ -28,7 +28,10 @@ export function Work() {
                     {project.image ? (
                       <img
                         src={project.image}
-                        alt={project.title}
+                        alt={`${project.title} — ${project.label} project by Devora Labs`}
+                        width={1600}
+                        height={840}
+                        decoding="async"
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                         loading="lazy"
                       />

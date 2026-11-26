@@ -94,7 +94,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-7 max-w-4xl font-display text-[3rem] font-bold leading-[0.98] tracking-[-0.03em] sm:text-6xl md:text-[5rem]"
         >
-          World-Class <span className="text-gradient">Design</span>
+          Web &amp; Mobile <span className="text-gradient">Development</span>
           <br />
           Partner<span className="text-accent-600">.</span>
         </motion.h1>
@@ -105,8 +105,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.16 }}
           className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink-muted"
         >
-          Design subscriptions for AI-powered startups. Strategy, UI/UX, branding and motion — all in
-          one flat monthly fee. <span className="font-semibold text-ink">Ship faster, grow with confidence.</span>
+          We design and build high-performance websites, web apps and iOS &amp; Android mobile apps
+          for startups and growing businesses. <span className="font-semibold text-ink">Ship faster, grow with confidence.</span>
         </motion.p>
 
         <motion.div

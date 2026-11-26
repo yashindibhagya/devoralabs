@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Reveal, SectionHeader } from '../Reveal'
 import { faqs } from '../../data/site'
 
@@ -26,6 +26,7 @@ export function FAQ() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="flex w-full items-center justify-between gap-6 py-6 text-left"
                   aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${i}`}
                 >
                   <span className="font-display text-lg font-semibold text-ink">{faq.question}</span>
                   <span
@@ -36,19 +37,17 @@ export function FAQ() {
                     +
                   </span>
                 </button>
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                      className="overflow-hidden"
-                    >
-                      <p className="max-w-2xl pb-6 leading-relaxed text-ink-muted">{faq.answer}</p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {/* Answers stay in the DOM (collapsed, not removed) so search engines can read every FAQ. */}
+                <motion.div
+                  id={`faq-answer-${i}`}
+                  initial={false}
+                  animate={isOpen ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                  className="overflow-hidden"
+                  aria-hidden={!isOpen}
+                >
+                  <p className="max-w-2xl pb-6 leading-relaxed text-ink-muted">{faq.answer}</p>
+                </motion.div>
               </Reveal>
             )
           })}

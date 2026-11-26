@@ -9,13 +9,13 @@ export function Services() {
           eyebrow="Services"
           title="What We"
           emphasis="Do."
-          intro="We combine strategy, speed, and skill to deliver exceptional design — every time. One flat fee, unlimited revisions, real results."
+          intro="UI/UX design, web development and mobile app development under one roof. We combine strategy, speed, and skill to ship products that deliver real results."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {services.map((service, i) => (
             <Reveal key={service.id} delay={i * 0.08}>
-              <article className="card-base group h-full p-8 hover:-translate-y-1.5 hover:shadow-card-hover">
+              <article id={service.id} className="card-base group h-full p-8 hover:-translate-y-1.5 hover:shadow-card-hover">
                 {/* accent bar */}
                 <span className="absolute left-0 top-0 h-full w-1 origin-top scale-y-0 bg-brand-500 transition-transform duration-300 group-hover:scale-y-100" />
                 {/* orb */}

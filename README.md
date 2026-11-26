@@ -60,3 +60,12 @@ public/
 # devoralabs
 # devoralabs
 # devoralabs
+
+## SEO
+
+- `npm run build` prerenders the page to static HTML (`src/entry-server.tsx` +
+  `scripts/prerender.mjs`), so crawlers get full content, and it also writes
+  `dist/sitemap.xml`, `dist/robots.txt` and the JSON-LD structured data.
+- The site's public URL lives in **`site.config.json`**. Change it there when you
+  move to a custom domain, and every canonical, Open Graph and sitemap URL follows.
+- Titles, descriptions and structured data are in `index.html` and `src/seo.ts`.

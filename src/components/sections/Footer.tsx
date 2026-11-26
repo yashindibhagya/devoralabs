@@ -1,20 +1,35 @@
 import { Logo } from '../Logo'
-import { nav, contact } from '../../data/site'
+import { nav, contact, services } from '../../data/site'
 
 export function Footer() {
   return (
     <footer className="border-t border-ink/[0.07] bg-white">
       <div className="container-x py-16">
-        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Logo />
             <p className="mt-5 max-w-xs leading-relaxed text-ink-muted">
-              A creative digital agency crafting design that ships. Build. Solve. Elevate.
+              A web and mobile app development company crafting digital products that ship. Build. Solve. Elevate.
             </p>
             <div className="mt-6 flex items-center gap-2 font-mono text-[0.68rem] uppercase tracking-[0.16em] text-ink-muted">
               <span className="h-2 w-2 animate-pulseDot rounded-full bg-emerald-500" />
               Available for projects
             </div>
+          </div>
+
+          <div>
+            <h4 className="font-mono text-[0.66rem] uppercase tracking-[0.2em] text-ink-muted">
+              Services
+            </h4>
+            <ul className="mt-5 space-y-3">
+              {services.map((service) => (
+                <li key={service.id}>
+                  <a href={`#${service.id}`} className="text-ink-soft transition-colors hover:text-brand-600">
+                    {service.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div>
